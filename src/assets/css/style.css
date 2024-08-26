@@ -1,0 +1,8 @@
+/* 
+Normalize CSS applied
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

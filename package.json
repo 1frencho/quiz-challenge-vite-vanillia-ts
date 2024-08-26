@@ -1,0 +1,25 @@
+{
+  "name": "02-quiz-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "name": "Marcos Alfaro",
+    "email": "preadrianrodriguez@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "watch": "tailwindcss -i ./src/assets/css/input.css -o ./public/output.css --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "flowbite": "^2.5.1"
+  }
+}
