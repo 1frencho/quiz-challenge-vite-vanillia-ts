@@ -1,3 +1,5 @@
+export type Subject = 'html' | 'css' | 'javascript' | 'accessibility' | 'home';
+
 export interface Answer {
   id: number;
   answer: string;

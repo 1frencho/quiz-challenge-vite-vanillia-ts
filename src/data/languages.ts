@@ -11,7 +11,7 @@ export const LANGUAGE_SELECTION = [
   },
   {
     name: 'JavaScript',
-    img: '/img/js.svg',
+    img: '/img/javascript.svg',
     color: '#ebf0ff',
   },
   {
