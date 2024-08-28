@@ -1,3 +1,4 @@
+import { Question } from '../interfaces/question.interface';
 import { applyAnimation } from '../utils/animate';
 
 function renderPanelInformation(panelInformation: HTMLDivElement | null) {
@@ -13,16 +14,26 @@ function renderPanelInformation(panelInformation: HTMLDivElement | null) {
   `;
 }
 
-function renderPanelQuestions(panelInformation: HTMLDivElement | null) {
+function renderPanelQuestions(
+  panelInformation: HTMLDivElement | null,
+  question: Question,
+  actualStep: number,
+  totalQuestions: number,
+  correctAnswers: number
+) {
   if (!panelInformation) return;
   applyAnimation(panelInformation, 'animate__flipInX');
   panelInformation.innerHTML = `
     <p class="md:mt-8 text-gray-600 text-base md:text-xl dark:text-white transition-all">
-      Question 1 of 10
+      Question ${actualStep} of ${totalQuestions}
     </p>
     <h2 class="md:text-[3rem] text-[3rem] font-medium leading-[100%] text-gray-700 dark:text-white transition-all">
-      What does HTML stand for?
+      ${question.question}
     </h2>
+     <p class="md:mt-8 text-gray-600 text-base md:text-xl dark:text-white transition-all">
+        Correct Answers: ${correctAnswers} out of ${totalQuestions} correct! <br />
+        It will updated after clicking the continue button.
+    </p>
   `;
 }
 

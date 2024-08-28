@@ -46,12 +46,13 @@ export const jsQuestions: Question[] = [
     question: 'How can you add a comment in JavaScript?',
     possibleAnswers: [
       { id: 1, answer: '// This is a comment', isCorrect: true },
-      { id: 2, answer: '<!-- This is a comment -->', isCorrect: false },
-      { id: 3, answer: "'This is a comment'", isCorrect: false },
+      { id: 2, answer: '&lt;!-- This is a comment --&gt;', isCorrect: false },
+      { id: 3, answer: '&#39;This is a comment&#39;', isCorrect: false },
       { id: 4, answer: '** This is a comment **', isCorrect: false },
     ],
     correctAnswer: 1,
   },
+
   {
     question: 'What is the correct way to write a JavaScript array?',
     possibleAnswers: [

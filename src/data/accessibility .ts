@@ -29,10 +29,10 @@ export const accessibilityQuestions: Question[] = [
     question:
       'Which HTML element is commonly used to improve keyboard navigation?',
     possibleAnswers: [
-      { id: 1, answer: 'The `<button>` element', isCorrect: true },
-      { id: 2, answer: 'The `<div>` element', isCorrect: false },
-      { id: 3, answer: 'The `<span>` element', isCorrect: false },
-      { id: 4, answer: 'The `<img>` element', isCorrect: false },
+      { id: 1, answer: 'The `&lt;button&gt;` element', isCorrect: true },
+      { id: 2, answer: 'The `&lt;div&gt;` element', isCorrect: false },
+      { id: 3, answer: 'The `&lt;span&gt;` element', isCorrect: false },
+      { id: 4, answer: 'The `&lt;img&gt;` element', isCorrect: false },
     ],
     correctAnswer: 1,
   },

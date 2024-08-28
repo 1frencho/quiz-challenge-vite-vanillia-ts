@@ -1,0 +1,8 @@
+.swal2-toast {
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px; /* Desplaza la alerta hacia abajo desde el top */
+}
+.swal2-icon {
+  display: none; /* Oculta el ícono para un estilo minimalista */
+}

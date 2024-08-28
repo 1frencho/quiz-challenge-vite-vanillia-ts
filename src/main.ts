@@ -2,12 +2,13 @@ import './assets/css/style.css';
 import 'flowbite';
 import 'flowbite/dist/flowbite.min.css';
 import { toggleDarkModeOnLoad } from './components/ToggleDark';
-import { renderOptions } from './components/optionSelect';
+import { renderOptions, resetGame } from './components/optionSelect';
 import { renderPanelInformation } from './components/panelInfo';
+import 'sweetalert2/dist/sweetalert2.min.css';
 import 'animate.css';
+import './assets/css/sweetalerts.css';
 import { renderHeaderLogo } from './components/headerLogo';
 import { Subject } from './interfaces/question.interface';
-
 // Document references
 const path = window.location.pathname.split('/');
 document.documentElement.style.setProperty('--animate-duration', '.8s');
@@ -23,8 +24,9 @@ const panelInformation =
 
 const homeBtn = document.querySelector<HTMLButtonElement>('#homeBtn');
 
-function defaultStart() {
+export function defaultStart() {
   // All animations will take half the time to accomplish
+  resetGame();
   handlePath('home');
   renderOptions(panelSelection, panelInformation);
   renderPanelInformation(panelInformation);
